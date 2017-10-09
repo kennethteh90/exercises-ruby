@@ -1,0 +1,184 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+h1, h3, h4 {
+  font-family: 'Merriweather', serif;
+}
+
+
+/*Navigation bar */
+
+.navbar-hackreactor {
+  height: 100px;
+  box-shadow: 0px 0px 2px 1px grey;
+  font-size: 14px;
+}
+
+.navbar-brand {
+  background-image: url("../resources/hack-reactor-logo.png");
+  width: 200px;
+  min-width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.btn-hackreactor {
+  font-size: 14px;
+  min-width: 130px;
+  height: 40px;
+  padding: 11px;
+}
+
+.btn-blue {
+  background-color: #0096DE;
+  border: none;
+  border-radius: 2px;
+  margin-left: 50px;
+}
+
+.btn-blue:hover {
+  background-color: rgba(0,150,222,0.9);
+  transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+  .navbar-hackreactor {
+    padding: 0 120px;
+  }
+}
+
+@media (max-width: 448px) {
+  .navbar-hackreactor {
+    height: 130px;
+  }
+}
+
+@media (max-width: 499px) {
+  .btn-hackreactor {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 448px) {
+  .btn-hackreactor {
+    flex-grow: 1;
+    margin-left: 0;
+  }
+}
+
+.nav-dropdown {
+  border-top: 3px solid rgb(0, 151, 240);
+  position: fixed;
+  display: none;
+  width: 400px;
+  top: 100px;
+  left: 350px;
+  background-color: white;
+  padding: 10px 18px;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+#remotedrop {
+  left: 420px;
+}
+
+.nav-dropdown h5 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-dropdown a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+
+
+/*Hero section*/
+
+.hero {
+  margin-top: 100px;
+  background-image: url("../resources/hero-bg--events.jpg");
+  /*background-position: left -150px top 0;*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 480px;
+  /*padding: 130px 0;*/
+  padding-top: 90px;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 2.6rem;
+  line-height: 1.4em;
+}
+
+.hero p {
+  color: white;
+  font-size: 1.5rem;
+  width: 80%;
+  margin: auto;
+}
+
+/*Information section*/
+
+.row-centeredwithpadding {
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.card-noborderwithpadding {
+  border: none;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .card-text, .card-body, .card {
+    margin: inherit 0;
+    padding: inherit 0;
+  }
+}
+
+.infocard h4 {
+  font-weight: 300;
+  padding: 10px 0px;
+}
+
+.icons {
+  margin: auto;
+  width: 60px;
+  height: 60px;
+}
+
+/*Host an event section*/
+
+.hostevent {
+  background-color: #EFEFEF;
+}
+
+.hostevent h3 {
+  font-size: 1.7rem;
+  line-height: 1.4em;
+}
+
+.hostevent p {
+  font-size: 1rem;
+}
+
+.btn-orange {
+  background-color: rgb(235, 129, 38);
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.btn-orange:hover {
+  background-color: rgba(235, 129, 38, 0.9);
+  transition: 0.3s;
+}
