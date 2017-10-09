@@ -1,0 +1,92 @@
+/* box-sizing: border-box */
+
+.awesome {
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  color: blue;
+}
+
+.alsocool {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 50px;
+  color: white;
+  vertical-align: middle;
+}
+
+.firstbox {
+  /* <br-width> || <br-style> || <color> */
+  border: 5px dashed red;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(to right,blue,red);
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.secondbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  position: sticky;
+  border: 5px double red;
+  background: radial-gradient(white,black);
+  text-align: center;
+  width: 500px;
+  height: 200px;
+}
+/*
+.innerbox {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+*/
+.sidebar {
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  float: left;
+}
+
+#button {
+
+}
+
+
+.relativediv {
+  position:relative;
+  background-color: pink;
+  width: 500px;
+  height: 500px;
+}
+
+.absolutediv {
+  position:absolute;
+  background-color: yellow;
+  left:10px;
+  top:10px;
+  width: 500px;
+  height: 500px;
+}
+
+.subabsolutediv {
+  position:absolute;
+  background-color: black;
+  left:10px;
+  top:10px;
+  width: 100px;
+  height: 100px;
+}
+
+.subrelativediv {
+  position: relative;
+  background-color: blue;
+  left:10px;
+  top:120px;
+  width: 100px;
+  height: 100px;
+}

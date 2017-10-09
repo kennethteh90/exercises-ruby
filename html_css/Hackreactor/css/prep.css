@@ -1,0 +1,249 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Specific */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.topnavgrid {
+  width: 100%;
+  height: 90px;
+  display: block;
+  margin: auto;
+  background-color: white;
+  z-index:1;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 0px 1px 1px grey;
+}
+
+.narrowgrid {
+  width: 80%;
+  display: block;
+  margin:auto;
+}
+
+.normalgrid {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.mainnav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: 50px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.logo {
+  display: block;
+  width: 180px;
+  height: 50px;
+  background-image: url("../resources/hack-reactor-logo.png");
+  background-size: 142px;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.navbar {
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.navbar a {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.navbar #applynow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0090d9;
+  color: white;
+  border-radius: 2px;
+  width: 100px;
+  height: 14px;
+  float: right;
+  margin-left: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.navbar #applynow:hover {
+    background-color: rgba(0,144,217,0.95);
+    transition: 0.4s;
+}
+
+.centeredblock {
+  /*display: block;*/
+  flex-flow: column;
+  text-align: center;
+  margin-top: 90px;
+  width: 100%;
+  padding: 50px 0px;
+  line-height: 2em;
+  background-color: #EFEFEF;
+  flex-grow: 1;
+}
+
+.centeredblock h2 {
+  flex-basis: 100%;
+  font-family: "Merriweather",Georgia,serif;
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+.centeredblock p {
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 100;
+}
+
+.faqcard {
+  margin: auto;
+  font-weight: bold;
+  text-align: left;
+  font-size: 16px;
+  width: 80%;
+  border-radius: 2px;
+  border: none;
+  padding: 10px 0px;
+}
+
+.faqcard:hover {
+  cursor:pointer;
+}
+
+.faqcard h3 {
+  padding-left: 10px;
+  position: relative;
+  top: -9px;
+}
+
+.faqcard p {
+  padding-left: 40px;
+}
+
+.faqcard ul {
+  padding-left: 30px;
+  /*list-style: square;*/
+}
+
+.faqcard ul li:before {
+    content: "";
+      border-color: transparent grey;
+      border-style: solid;
+      border-width: 0.4em 0 0.4em 0.8em;
+      display: block;
+      height: 0;
+      width: 0;
+      left: -1em;
+      top: 0.9em;
+      position: relative;
+}
+
+.shadowcard {
+  background-color: white;
+  color: #0090d9;
+  padding: 10px 0px;
+  margin-top: 15px;
+  box-shadow: 0px 1px 4px -2px rgba(0,0,0,.8);
+}
+
+.hiddeninfo {
+  display: none;
+  color: black;
+  border-color: rgba(0,0,0,0.05);
+  border-style: solid;
+  border-left-width: 0.5px;
+  border-right-width: 0.5px;
+  padding: 20px 0px;
+}
+
+.moreFAQ {
+  margin-top: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid rgba(222,124,1,0.95);
+  color: rgba(222,124,1,0.95);
+  border-radius: 2px;
+  right: 5px;
+  width: 110px;
+  height: 10px;
+  padding: 14px 16px;
+  text-decoration: none;
+  /*font-weight: bold;*/
+  font-size: 16px;
+}
+
+.moreFAQ:hover {
+    background-color: rgba(222,124,1,0.95);
+    transition: 0.4s;
+    color: white;
+    font-weight: bold;
+}
